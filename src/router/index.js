@@ -181,9 +181,21 @@ export const constantRoutes = [
     children: [
       {
         path: "index",
-        name: "Form",
+        name: "addComponent",
         component: () => import("@/views/addComponents"),
         meta: { title: "动态添加组件", icon: "form" }
+      }
+    ]
+  },  
+  {
+    path: "/writeAComponents",
+    component: Layout,
+    children: [
+      {
+        path: "index",
+        name: "diyComponents",
+        component: () => import("@/views/writeAComponent"),
+        meta: { title: "自写组件", icon: "table" }
       }
     ]
   },  
